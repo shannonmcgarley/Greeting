@@ -4,7 +4,7 @@ object Animals  extends App {
 
   val Persian: Cat = new Persian()
   val Wolf : Dog = new Wolf()
-  val Boarder : Dog = new Boarder()
+  val Boarder : Boarder = new Boarder()
   val Meowth : Cat = new Meowth(100, true)
   val Jess : Animal = new Cat()
   val Lassie : Animal = new Dog()
@@ -13,6 +13,7 @@ object Animals  extends App {
   println(Wolf.speak)
   println(Meowth.speak)
   println(Boarder.speak)
+
 
 }
 
@@ -49,5 +50,6 @@ class Meowth(coins: Int, teamrocket: Boolean) extends Cat{
 }
 
 class Boarder() extends Dog{
-  override def speak: String = "Woof!"
+  override def speak: String = "Woof! " + hunt
+  private val hunt : String = "I hunt rats"
 }

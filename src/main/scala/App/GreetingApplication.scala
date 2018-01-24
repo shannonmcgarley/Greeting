@@ -20,6 +20,6 @@ object Promt {
 object GreetingApplication extends App {
   val name = Promt.ask("What is your name?")
   val age = Promt.ask("How old are you? ")
-  val person 	=	new	Person(name,	age.toInt)
+  val person = new Person(name, age.toInt)
   println(person.speak())
 }
